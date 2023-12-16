@@ -1,0 +1,47 @@
+ul {
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: #7B68EE;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-shadow: -4px 4px 5px silver;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: black;
+        }
+
+        p { color: white;
+    font-size: 15pt;
+    font-family: Serif;
+}
+
+
+h1 { color: white;
+   font-size: 50pt;
+    font-family: Serif;
+   text-align: center;
+  text-shadow: -4px 4px 5px dimgrey;
+}
+
+h2 { color: white;
+    font-size: 15pt;
+    font-family: Serif;
+}
+
+h3 { color: white;
+    font-size: 15pt;
+    font-family: Serif;
+}

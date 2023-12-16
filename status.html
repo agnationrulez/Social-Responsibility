@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="navigation.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cougar Status Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .status {
+            margin-top: 20px;
+        }
+
+        .blockage,
+        .traffic,
+        .closure {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<ul>
+       <li><a href="home.html">Home</a></li>
+       <li><a href="status.html">Parking/Traffic</a></li>
+        <li><a href="map.html">Map</a></li>
+        
+    </ul>
+
+<body bgcolor="#191970">
+    <h1 style="color: white;">Cougar Status Report</h1>
+
+    <p style="font-size: 15pt"; align="center">
+        This feature brodcasts live status reports on blockages, traffic, and parking lot closures around KU's campus!
+    </p>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* Set the height to the viewport height for vertical centering */
+        }
+
+        .status {
+            text-align: center;
+        }
+    </style>
+    <title>Centered Status</title>
+</head>
+<body>
+    <div class="container">
+        <div class="status">
+            <h2><u>Current Status</u></h2>
+            <div class="blockage">
+                <h3>Blockage Status</h3>
+                <p id="blockageStatus">No blockages reported.</p>
+            </div>
+            <div class="traffic">
+                <h3>Traffic Status</h3>
+                <p id="trafficStatus">Normal traffic conditions.</p>
+            </div>
+            <div class="closure">
+                <h3>Parking Lot Closures</h3>
+                <p id="closureStatus">No parking lot closures at the moment.</p>
+            </div>
+        </div>
+    </div>
+  <p align="center">
+      <img src="logo.png" height="350" width="400">
+</p>
+    <script>
+        // Simulated data (in a real-world scenario, this data would come from a server/database)
+        const blockageData = "No blockages reported.";
+        const trafficData = "Normal traffic conditions.";
+        const closureData = "No parking lot closures at the moment.";
+
+        // Update status information
+        document.getElementById("blockageStatus").innerText = blockageData;
+        document.getElementById("trafficStatus").innerText = trafficData;
+        document.getElementById("closureStatus").innerText = closureData;
+
+        // Simulate real-time updates (in a real-world scenario, you would fetch and update data from the server periodically)
+        setInterval(() => {
+            // Update data (for demonstration purposes)
+            const updatedBlockageData = Math.random() > 0.5 ? "No blockages reported." : "Blockage reported near Green Lane Academic Building(GLAB).";
+            const updatedTrafficData = Math.random() > 0.5 ? "Normal traffic conditions." : "Heavy traffic on Morris Ave.";
+            const updatedClosureData = Math.random() > 0.5 ? "No parking lot closures at the moment." : "Vaughn-Eames Paking Lot is temporarily closed.";
+
+            // Update status information
+            document.getElementById("blockageStatus").innerText = updatedBlockageData;
+            document.getElementById("trafficStatus").innerText = updatedTrafficData;
+            document.getElementById("closureStatus").innerText = updatedClosureData;
+        }, 5000); // Update every 5 seconds (adjust as needed)
+    </script>
+</body>
+
+<footer>
+        <h3>This website was created by Andre Gray and James Hoenings, Copyright &#169; 2023</h3>
+     </footer>
+
+</html>
